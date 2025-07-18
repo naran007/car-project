@@ -1,0 +1,667 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+
+}
+
+/* nav css */
+
+nav {
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 18px 0;
+  flex-wrap: wrap; 
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00bcd4;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* login form css */
+.login-body {
+  background: url('images/vintage-car.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* Login Form Container (under navbar) */
+.login-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  margin: 80px auto 0 auto;
+}
+
+/* Heading */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffd700;
+  font-size: 24px;
+}
+
+/* Input Fields */
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.login-form input::placeholder {
+  color: #ccc;
+}
+
+/* Button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #e6c200;
+}
+
+/* Extra Text */
+.login-form p {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-form a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+
+/* RESET + GLOBAL */
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* 🏠 HERO SECTION */
+.hero-section {
+  background: url('images/vintage-bg.jpg') no-repeat center center/cover;
+  padding: 120px 30px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  
+}
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.btn {
+  background: #f1c40f;
+  padding: 12px 25px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #d4ac0d;
+}
+
+/* 🔧 FEATURES SECTION */
+.features-section {
+  padding: 60px 30px;
+  background: #f9f9f9;
+  text-align: center;
+}
+.features-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.feature-card {
+  background: white;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+.feature-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.feature-card p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* 📩 CTA SECTION */
+.cta-section {
+  padding: 60px 30px;
+  background: #222;
+  color: white;
+  text-align: center;
+}
+.cta-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.cta-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* 📞 FOOTER */
+.footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+.car-listing-section {
+  padding: 60px 30px;
+  background-color: #f7f7f7;
+  text-align: center;
+    background-color: #1f1f1f;
+    
+}
+.car-listing-section h2 {
+  font-size: 32px;
+  color: #e6b800;
+  margin-bottom: 40px;
+}
+.car-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.car-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+.car-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.car-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.car-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ffc107;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.car-card img {
+  height: 200px;         /* fixed height */
+  width: 300px;           /* maintain aspect ratio */
+  object-fit: cover;     /* crop extra if needed */
+  display: block;
+  margin: 0 auto;
+}
+
+.view-btn:hover {
+  background-color: #ffb300;
+}
+
+.car-card .btn {
+  background-color: #f1c40f;
+  color: black;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.car-card .btn:hover {
+  background-color: #d4ac0d;
+}
+.car-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.car-card {
+  width: 300px;
+  /* rest of your existing styles */
+}
+
+/* === Car Specs Section === */
+.car-specs {
+  background-color: #222;
+  color: #e6e6e6;
+  padding: 40px 20px;
+  margin: 30px;
+  border-left: 4px solid #ffcb05;
+  max-width: 850px;
+  margin-inline: auto;
+}
+
+.car-specs h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffcb05;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.car-specs ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+
+.car-specs li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* === Description Section === */
+.car-description {
+  padding: 40px 20px;
+  color: grey;
+  max-width: 850px;
+  margin: auto;
+}
+
+.car-description h2 {
+  font-size: 1.8rem;
+  color: #ffcb05;
+  margin-bottom: 10px;
+}
+
+/* === Car Gallery Section === */
+.car-gallery {
+  background-color: #1f1f1f;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.car-gallery h2 {
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #ffd700;
+  font-size: 28px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ccc;
+}
+
+.img-box img {
+  height: 350px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+.img-box p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ffd700;
+}
+
+
+/* === Call-to-Action Button === */
+footer .btn {
+  display: block;
+  margin: 40px auto;
+  background-color: #ffcb05;
+  color: #1a1a1a;
+  padding: 14px 28px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+footer .btn:hover {
+  background-color: #e6b800;
+}
+/* Registration page */
+
+/* Applies to Register Page Only */
+.register-body {
+  background: url('images/vintage-car.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* removes scroll bar */
+  height: 100vh; /* fit to screen */
+}
+
+/* Form Container */
+.register-container {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6); /* Transparent background */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+  text-align: center;
+  backdrop-filter: blur(5px); /* adds glassy effect */
+}
+
+/* Heading */
+.register-container h2 {
+  margin-bottom: 20px;
+  color: #ffd700; /* Gold */
+}
+
+/* Form Fields */
+.register-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1); /* subtle transparent */
+  color: #fff;
+}
+
+.register-form input::placeholder {
+  color: #aaa;
+}
+
+/* Submit Button */
+.register-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-form button:hover {
+  background-color: #e6c200;
+}
+
+/* Footer Text */
+.register-form p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-form a {
+  color: #ffd700;
+  text-decoration: none;
+}
+/* contact us */
+.contact-body {
+  background: url('images/vintage-car.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  min-height: 100vh;       /* Allow full height */
+  overflow-y: auto;        /* ENABLE vertical scroll */
+}
+
+
+.contact-container {
+  background: rgba(0, 0, 0, 0.6);
+  max-width: 600px;
+  margin: 80px auto 0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.contact-container p {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 15px;
+  color: #ddd;
+}
+
+.contact-form .form-group {
+  margin-bottom: 18px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #eee;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  resize: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e5c100;
+}
+
+/* Book dream */
+
+.book-page {
+    min-height: 100vh; /* Ensure full screen height */
+  background: url('images/bg-dream.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-container {
+  max-width: 500px;
+  margin:80px auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.form-container button {
+  background-color: #ffcc00;
+  color: black;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #ffaa00;
+}

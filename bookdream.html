@@ -1,0 +1,61 @@
+ <!-- bookdream.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Raatatatatat | Book Dream</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="book-page">
+
+     <nav>
+    <div class="logo">🚗 CarHub</div>
+    <ul class="nav-links">
+      <li><a href="home.html" >Home</a></li>
+       <li><a href="login.html" >Login</a></li>
+         <li><a href="registration.html" >Register</a></li>
+      <li><a href="car-listing.html">Car Listing</a></li>
+      <li><a href="car-detail.html">Car Detail</a></li>
+      <li><a href="bookdream.html" class="active">Book Dream</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="form-container">
+    <h2>🛒 Book Your Dream Car</h2>
+    <form action="submit_booking.php" method="POST">
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Contact Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="car">Select Car:</label>
+      <select id="car" name="car_model" required>
+        <option disabled selected>Select a car</option>
+        <option>Porsche 911</option>
+        <option>BMW M5</option>
+        <option>Bentley Continental GT</option>
+        <option> Lamborghini Huracán EVO</option>
+        <option>Bugatti Chiron</option>
+        <option>Rolls-Royce Phantom</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date"  name="preferred_date" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Anything specific you're looking for?"></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+
+    <footer class="footer">
+    <p>&copy; 2025 CarHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

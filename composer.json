@@ -1,0 +1,14 @@
+{
+    "name": "carweb/beckend",
+    "description": "raatatatata",
+    "type": "project",
+    "authors": [
+        {
+            "name": "NaNu"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^1.16",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
